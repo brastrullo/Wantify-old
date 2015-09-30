@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <base href="/Wantify">
+  <base href="/Wantify/">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Wantify | Your one stop to window-shop.">
@@ -13,7 +13,7 @@
 <body ng-app="myApp" ng-controller="MainCtrl as main">
 <header>
   <ul>
-    <a href="/" class="logo"><li>Wantify</li></a>
+    <a href="/Wantify/" class="logo"><li>Wantify</li></a>
     <div>
       <form class="searchbar">
         <!-- <select class="q-search">
@@ -23,7 +23,7 @@
         <input id="search" type='search' ng-model="query" placeholder="Search" aria-label="Search">
         <button id="submit" type="submit"><img src="img/Icons/search.png"></button>
       </form>
-      <a href="/" class="checkout"><img src="img/Icons/checkout.png"></a>
+      <a href="/Wantify/" class="checkout"><img src="img/Icons/checkout.png"></a>
     </div>
   </ul>
 </header>
@@ -32,9 +32,9 @@
   <ul class="products">
     <span class="headline">Check out our latest products:</span>
     <li class="productItem" ng-repeat="product in products | filter: query">
-      <a href="/"><img class="productImg" ng-src="{{product.imgUrl}}" alt="{{product.title}}"></a>
+      <a href="/Wantify/"><img class="productImg" ng-src="{{product.imgUrl}}" alt="{{product.title}}"></a>
       <div class="productTitle">
-        <a href="/"><h2>{{product.title}}</h2></a>
+        <a href="/Wantify/"><h2>{{product.title}}</h2></a>
         <img src="img/Icons/addtocart.png">
       </div>
     </li>
