@@ -8,12 +8,12 @@ angular.module('myApp', [
   $routeProvider
   .when('/', {
     caseInsensitiveMatch : true,
-    templateUrl: 'index.html',
+    templateUrl: '/index.html',
     controller: 'MainCtrl',
     controllerAs: 'main'
   })
   .when('/404', {
-    templateUrl: 'index.html'
+    templateUrl: '/index.html'
   })
   .otherwise({redirectTo: '/', caseInsensitiveMatch : true});
 }]);
