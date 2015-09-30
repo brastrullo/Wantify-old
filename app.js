@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.controller'
-]).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+]).config(['$routeProvider', function($routeProvider) {
   $routeProvider
   .when('/', {
     caseInsensitiveMatch : true,
@@ -16,8 +16,6 @@ angular.module('myApp', [
     templateUrl: 'index.html'
   })
   .otherwise({redirectTo: '/', caseInsensitiveMatch : true});
-
-  $locationProvider.html5Mode(true);
 }]);
 
 angular
