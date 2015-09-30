@@ -31,9 +31,9 @@
   <ul class="products">
     <span class="headline">Check out our latest products:</span>
     <li class="productItem" ng-repeat="product in products | filter: query">
-      <a href="/{{product.id}}"><img class="productImg" ng-src="{{product.imgUrl}}" alt="{{product.title}}"></a>
+      <a href="/"><img class="productImg" ng-src="{{product.imgUrl}}" alt="{{product.title}}"></a>
       <div class="productTitle">
-        <a href="/{{product.id}}"><h2>{{product.title}}</h2></a>
+        <a href="/"><h2>{{product.title}}</h2></a>
         <img src="img/Icons/addtocart.png">
       </div>
     </li>
