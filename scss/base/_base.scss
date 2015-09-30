@@ -1,0 +1,19 @@
+article {
+  margin: 5em 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.headline {
+  width: 100%;
+  margin-top: 1em;
+}
+
+@media screen and (min-width: $br-sm) {
+  article {
+    margin-top: 3em;
+  }
+}
